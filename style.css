@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+ body {
+    background:url("Images/bg-bottom.svg") left no-repeat,url("Images/bg-top.svg")right no-repeat;
+    font-family:'Montserrat','sans-serif';
+    background-color:hsl(240, 78%, 98%);
+    background-size:60%;
+    font-size:15px;
+   
+}
+.container{
+   min-height:100vh;
+}
+
+#card-container-1,
+#card-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+    transition:display 5s ease;
+    height:600px;
+    
+}
+#heading{
+    text-align: center;
+    padding-top:50px;
+}
+.card-info {
+    
+    width:350px;
+    border-radius:5px;
+    padding:10 30px;px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#cards-holder p{
+    border-bottom: 1px solid black;
+    padding:15px;
+    width:80%;
+    text-align:center;
+}
+#cards-holder small{
+    text-align: center;
+}
+
+
+.color-alter{
+    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height:550px;
+}
+.color-alter button{
+    margin-top:30px;
+    padding:10px 50px;
+    background-color:hsl(240, 78%, 98%);
+    color:hsl(237, 63%, 64%);
+    border-radius:5px;
+    border:0;
+}
+
+
+.alter-color {
+    background-color:white;
+    height:500px;
+   
+}
+.alter-color button{
+    margin-top:30px;
+    padding:10px 50px;
+    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:white;
+    border-radius:5px;
+    border:0;
+}
+
+#card-container-2 {
+    
+    display:none;
+} 
+#card-container-2.show{
+    
+    display:flex;
+}
+
+ #card-container-1.show{
+   
+    display:none;
+} 
+#button{
+    padding:10px 20px;
+    border-radius: 80px;;
+    outline:none;
+    background-color:hsl(240, 78%, 98%);
+    border-left:50px solid hsl(237, 63%, 64%);
+    
+}
+#button.switch{
+    border-left:50px solid white;
+    border-right:50px solid hsl(237, 63%, 64%);
+}
+@media (max-width:700px){
+    #card-container-1,
+#card-container-2 {
+     flex-direction:column;
+    height:100vh;
+}
+.card-info{
+    margin-bottom:25px;
+    height:300px;
+}
+}
